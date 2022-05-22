@@ -9,8 +9,9 @@ public class Main {
 
         if (amount < 1000) {
             bonus = 0;
-            if (amount >= 1000)
-                bonus = amount / 100 * limit;
+        }
+        if (amount >= 1000) {
+            bonus = amount / 100 * limit;
         }
 
         int total = balance + bonus;
