@@ -1,3 +1,5 @@
+import java.sql.SQLOutput;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -7,16 +9,16 @@ public class Main {
 
         int bonus = amount / 100 * limit;
 
-        if (amount < 1000) {
+        if (amount > 1000) {
+            bonus = amount / 100 * limit;
+        } else {
             bonus = 0;
         }
-        if (amount >= 1000) {
-            bonus = amount / 100 * limit;
-        }
 
-        int total = balance + bonus;
+        int total = balance + bonus + amount;
 
-        System.out.println(total = amount + balance + bonus);
+        System.out.println(total);
+        System.out.println(bonus);
 
 
     }
